@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Al Noor Laundry</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+
+    <nav class="dash-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-shirt"></i> Al Noor
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Order History</a>
+                <a href="#">Profile</a>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-content">
+        <header class="welcome-header">
+            <h1>Welcome back, John Doe!</h1>
+            <p>Manage your laundry orders and track their progress</p>
+        </header>
+
+        <div class="main-grid">
+            <div class="active-order-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Active Order Status</h2>
+                        <span class="status-badge">Washing</span>
+                    </div>
+                    
+                    <div class="order-details-box">
+                        <div class="order-id-row">
+                            <div>
+                                <label>Order ID</label>
+                                <p class="bold-id">ORD-2024-001</p>
+                            </div>
+                            <div class="text-right">
+                                <label>Date</label>
+                                <p class="bold-date">2024-01-15</p>
+                            </div>
+                        </div>
+
+                        <div class="service-tags">
+                            <span class="tag">Wash</span>
+                            <span class="tag">Dry</span>
+                            <span class="tag">Fold</span>
+                        </div>
+
+                        <div class="order-price">₱450</div>
+                    </div>
+
+                    <button class="btn-full-details">View Full Details</button>
+                </div>
+
+                <div class="card recent-orders-card">
+                    <h2>Recent Orders</h2>
+                    
+                    <div class="order-item">
+                        <div class="order-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                        <div class="order-info">
+                            <p class="order-num">ORD-2024-002</p>
+                            <p class="order-date">2024-01-14</p>
+                        </div>
+                        <div class="order-meta">
+                            <p class="order-price-small">₱300</p>
+                            <span class="status-text ready">Ready for Pickup</span>
+                        </div>
+                        <button class="btn-view">View</button>
+                    </div>
+
+                    <div class="order-item">
+                        <div class="order-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                        <div class="order-info">
+                            <p class="order-num">ORD-2024-003</p>
+                            <p class="order-date">2024-01-10</p>
+                        </div>
+                        <div class="order-meta">
+                            <p class="order-price-small">₱350</p>
+                            <span class="status-text completed">Completed</span>
+                        </div>
+                        <button class="btn-view">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="quick-actions">
+                <div class="card">
+                    <h2>Quick Actions</h2>
+                    <div class="action-btn-group">
+                        <button class="action-card primary">
+                            <div class="action-icon"><i class="fa-solid fa-circle-plus"></i></div>
+                            <div class="action-text">
+                                <strong>New Booking</strong>
+                                <span>Create a new order</span>
+                            </div>
+                        </button>
+                        <button class="action-card secondary">
+                            <div class="action-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                            <div class="action-text">
+                                <strong>Order History</strong>
+                                <span>View past orders</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="dash-footer">
+        <div class="readdy-badge">Designed by <span>Readdy</span></div>
+    </footer>
+
+    <script src="dashboard-js.js"></script>
+</body>
+</html>

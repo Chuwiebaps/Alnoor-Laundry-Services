@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics & Reports | Al Noor Staff</title>
+    <link rel="stylesheet" href="analytics-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="staff-page">
+
+    <nav class="staff-nav">
+        <div class="nav-container">
+            <div class="logo"><i class="fa-solid fa-shirt"></i> Al Noor - Staff Portal</div>
+            <div class="nav-links">
+                <a href="staff-dashboard.html">Dashboard</a>
+                <a href="staff-transactions.html">Transactions</a>
+                <a href="staff-customers.html">Customers</a>
+                <a href="staff-analytics.html" class="active">Analytics</a>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-content">
+        <header class="page-header">
+            <h1>Analytics & Reports</h1>
+            <p>Business performance metrics and insights</p>
+        </header>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-top">
+                    <div class="m-icon teal"><i class="fa-solid fa-dollar-sign"></i></div>
+                    <span class="growth positive">+15%</span>
+                </div>
+                <div class="metric-val">
+                    <span>Total Revenue</span>
+                    <h2>₱45,600</h2>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-top">
+                    <div class="m-icon purple"><i class="fa-solid fa-bag-shopping"></i></div>
+                    <span class="growth positive">+8%</span>
+                </div>
+                <div class="metric-val">
+                    <span>Total Orders</span>
+                    <h2>156</h2>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-top">
+                    <div class="m-icon blue"><i class="fa-solid fa-chart-line"></i></div>
+                    <span class="growth positive">+5%</span>
+                </div>
+                <div class="metric-val">
+                    <span>Avg Order Value</span>
+                    <h2>₱292</h2>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-top">
+                    <div class="m-icon green"><i class="fa-solid fa-user-plus"></i></div>
+                    <span class="growth positive">+12%</span>
+                </div>
+                <div class="metric-val">
+                    <span>Customer Growth</span>
+                    <h2>+12%</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="charts-row">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Revenue Trend</h3>
+                    <div class="toggle-btns">
+                        <button class="tgl active">Week</button>
+                        <button class="tgl">Month</button>
+                    </div>
+                </div>
+                <div class="bar-chart-container">
+                    <div class="bar-row"><span>Mon</span> <div class="bar-bg"><div class="bar-fill" style="width: 50%;"></div></div> <b>₱4,500</b></div>
+                    <div class="bar-row"><span>Tue</span> <div class="bar-bg"><div class="bar-fill" style="width: 58%;"></div></div> <b>₱5,200</b></div>
+                    <div class="bar-row"><span>Wed</span> <div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div></div> <b>₱6,800</b></div>
+                    <div class="bar-row"><span>Thu</span> <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div> <b>₱7,200</b></div>
+                    <div class="bar-row"><span>Fri</span> <div class="bar-bg"><div class="bar-fill" style="width: 95%;"></div></div> <b>₱8,900</b></div>
+                    <div class="bar-row"><span>Sat</span> <div class="bar-bg"><div class="bar-fill" style="width: 72%;"></div></div> <b>₱6,500</b></div>
+                    <div class="bar-row"><span>Sun</span> <div class="bar-bg"><div class="bar-fill" style="width: 72%;"></div></div> <b>₱6,500</b></div>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h3>Service Breakdown</h3>
+                <div class="service-list">
+                    <div class="service-item">
+                        <div class="s-info">
+                            <div class="s-icon wash"><i class="fa-solid fa-droplet"></i></div>
+                            <div><b>Wash</b><br><small>145 orders</small></div>
+                        </div>
+                        <div class="s-stats">
+                            <b>₱21,750</b><br><small>48%</small>
+                        </div>
+                        <div class="progress-container"><div class="p-fill wash-fill" style="width: 48%;"></div></div>
+                    </div>
+                    <div class="service-item">
+                        <div class="s-info">
+                            <div class="s-icon dry"><i class="fa-solid fa-sun"></i></div>
+                            <div><b>Dry</b><br><small>132 orders</small></div>
+                        </div>
+                        <div class="s-stats">
+                            <b>₱13,200</b><br><small>29%</small>
+                        </div>
+                        <div class="progress-container"><div class="p-fill dry-fill" style="width: 29%;"></div></div>
+                    </div>
+                    <div class="service-item">
+                        <div class="s-info">
+                            <div class="s-icon fold"><i class="fa-solid fa-shirt"></i></div>
+                            <div><b>Fold</b><br><small>118 orders</small></div>
+                        </div>
+                        <div class="s-stats">
+                            <b>₱23,600</b><br><small>52%</small>
+                        </div>
+                        <div class="progress-container"><div class="p-fill fold-fill" style="width: 52%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="top-cust-section">
+            <h3>Top Customers</h3>
+            <div class="table-container">
+                <table class="staff-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Customer Name</th>
+                            <th>Total Orders</th>
+                            <th>Total Spent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="rank-badge gold">1</span></td>
+                            <td class="bold">Sarah Williams</td>
+                            <td>20 orders</td>
+                            <td class="bold teal-text">₱9,000</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge silver">2</span></td>
+                            <td class="bold">David Wilson</td>
+                            <td>18 orders</td>
+                            <td class="bold teal-text">₱8,100</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge bronze">3</span></td>
+                            <td class="bold">John Doe</td>
+                            <td>15 orders</td>
+                            <td class="bold teal-text">₱6,750</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="staff-footer">
+        <div class="readdy-badge">Designed by <span>Readdy</span></div>
+    </footer>
+
+    <script src="analytics-js.js"></script>
+</body>
+</html>

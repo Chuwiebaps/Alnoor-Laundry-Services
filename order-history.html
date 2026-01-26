@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History | Al Noor</title>
+    <link rel="stylesheet" href="history-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="history-page">
+
+    <nav class="nav-bar">
+        <div class="container nav-content">
+            <div class="logo">
+                <i class="fa-solid fa-shirt"></i> Al Noor
+            </div>
+            <div class="nav-menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="order-history.html" class="active">Order History</a>
+                <a href="#">Profile</a>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container history-main">
+        <header class="page-header">
+            <h1>Order History</h1>
+            <p>View all your past and current orders</p>
+        </header>
+
+        <div class="table-container">
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Services</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="orderTableBody">
+                    <tr>
+                        <td class="bold">ORD-2024-001</td>
+                        <td>2024-01-15</td>
+                        <td>
+                            <span class="tag">Wash</span>
+                            <span class="tag">Dry</span>
+                            <span class="tag">Fold</span>
+                        </td>
+                        <td class="bold">₱450</td>
+                        <td><span class="status washing">Washing</span></td>
+                        <td><button class="btn-view">View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">ORD-2024-002</td>
+                        <td>2024-01-14</td>
+                        <td>
+                            <span class="tag">Wash</span>
+                            <span class="tag">Dry</span>
+                        </td>
+                        <td class="bold">₱300</td>
+                        <td><span class="status ready">Ready for Pickup</span></td>
+                        <td><button class="btn-view">View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">ORD-2024-003</td>
+                        <td>2024-01-10</td>
+                        <td>
+                            <span class="tag">Wash</span>
+                            <span class="tag">Fold</span>
+                        </td>
+                        <td class="bold">₱350</td>
+                        <td><span class="status completed">Completed</span></td>
+                        <td><button class="btn-view">View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">ORD-2024-004</td>
+                        <td>2024-01-08</td>
+                        <td>
+                            <span class="tag">Dry</span>
+                            <span class="tag">Fold</span>
+                        </td>
+                        <td class="bold">₱300</td>
+                        <td><span class="status completed">Completed</span></td>
+                        <td><button class="btn-view">View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">ORD-2024-005</td>
+                        <td>2024-01-05</td>
+                        <td>
+                            <span class="tag">Wash</span>
+                            <span class="tag">Dry</span>
+                            <span class="tag">Fold</span>
+                        </td>
+                        <td class="bold">₱450</td>
+                        <td><span class="status completed">Completed</span></td>
+                        <td><button class="btn-view">View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">ORD-2024-006</td>
+                        <td>2024-01-03</td>
+                        <td>
+                            <span class="tag">Wash</span>
+                        </td>
+                        <td class="bold">₱150</td>
+                        <td><span class="status completed">Completed</span></td>
+                        <td><button class="btn-view">View Details</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer-simple">
+        <div class="readdy-badge">Designed by <span>Readdy</span></div>
+    </footer>
+
+    <script src="history-js.js"></script>
+</body>
+</html>

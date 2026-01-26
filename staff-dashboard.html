@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard | Al Noor</title>
+    <link rel="stylesheet" href="staff-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="staff-page">
+
+    <nav class="staff-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-shirt"></i> Al Noor - Staff Portal
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Transactions</a>
+                <a href="#">Customers</a>
+                <a href="#">Analytics</a>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-content">
+        <header class="page-header">
+            <h1>Staff Dashboard</h1>
+            <p>Manage orders and track daily operations</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-info">
+                    <span>Pending Orders</span>
+                    <h2>5</h2>
+                </div>
+                <div class="stat-icon yellow"><i class="fa-solid fa-clock"></i></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-info">
+                    <span>In Progress</span>
+                    <h2>8</h2>
+                </div>
+                <div class="stat-icon purple"><i class="fa-solid fa-spinner"></i></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-info">
+                    <span>Ready for Pickup</span>
+                    <h2>3</h2>
+                </div>
+                <div class="stat-icon green"><i class="fa-solid fa-bag-shopping"></i></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-info">
+                    <span>Completed Today</span>
+                    <h2>12</h2>
+                </div>
+                <div class="stat-icon teal"><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+        </div>
+
+        <section class="orders-section">
+            <h3>Active Orders Queue</h3>
+            <div class="table-container">
+                <table class="staff-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Services</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Payment</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderQueue">
+                        <tr>
+                            <td class="bold">ORD-2024-001</td>
+                            <td>John Doe</td>
+                            <td>2024-01-15</td>
+                            <td>
+                                <span class="tag">Wash</span> <span class="tag">Dry</span> <span class="tag">Fold</span>
+                            </td>
+                            <td class="bold">₱450</td>
+                            <td><span class="status washing">Washing</span></td>
+                            <td><span class="pay-badge pending">Pending</span></td>
+                            <td><button class="btn-manage">Manage</button></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">ORD-2024-002</td>
+                            <td>Jane Smith</td>
+                            <td>2024-01-14</td>
+                            <td>
+                                <span class="tag">Wash</span> <span class="tag">Dry</span>
+                            </td>
+                            <td class="bold">₱300</td>
+                            <td><span class="status ready">Ready for Pickup</span></td>
+                            <td><span class="pay-badge pending">Pending</span></td>
+                            <td><button class="btn-manage">Manage</button></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">ORD-2024-003</td>
+                            <td>Mike Johnson</td>
+                            <td>2024-01-15</td>
+                            <td>
+                                <span class="tag">Wash</span> <span class="tag">Fold</span>
+                            </td>
+                            <td class="bold">₱350</td>
+                            <td><span class="status pending-st">Pending</span></td>
+                            <td><span class="pay-badge pending">Pending</span></td>
+                            <td><button class="btn-manage">Manage</button></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">ORD-2024-004</td>
+                            <td>Sarah Williams</td>
+                            <td>2024-01-15</td>
+                            <td>
+                                <span class="tag">Dry</span> <span class="tag">Fold</span>
+                            </td>
+                            <td class="bold">₱300</td>
+                            <td><span class="status drying">Drying</span></td>
+                            <td><span class="pay-badge pending">Pending</span></td>
+                            <td><button class="btn-manage">Manage</button></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">ORD-2024-005</td>
+                            <td>Tom Brown</td>
+                            <td>2024-01-14</td>
+                            <td>
+                                <span class="tag">Wash</span> <span class="tag">Dry</span> <span class="tag">Fold</span>
+                            </td>
+                            <td class="bold">₱450</td>
+                            <td><span class="status folding">Folding</span></td>
+                            <td><span class="pay-badge pending">Pending</span></td>
+                            <td><button class="btn-manage">Manage</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="staff-footer">
+        <div class="readdy-badge">Designed by <span>Readdy</span></div>
+    </footer>
+
+    <script src="staff-js.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+:root {
+    --primary-teal: #11998e;
+    --bg-gray: #f9fafb;
+    --border-color: #e2e8f0;
+    --text-dark: #1a202c;
+    --text-light: #718096;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.register-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.register-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Logo Styling */
+.register-logo {
+    color: var(--primary-teal);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Header Text */
+.register-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-header h1 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.register-header p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Card Styling */
+.register-card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #cbd5e0;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-teal);
+}
+
+/* Button Styling */
+.btn-signup-full {
+    width: 100%;
+    background-color: var(--primary-teal);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-signup-full:hover {
+    background-color: #0e837a;
+}
+
+/* Footer Styling */
+.register-footer {
+    padding: 25px;
+    background-color: #1a202c;
+    color: #a0aec0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.powered-text span {
+    color: var(--primary-teal);
+    font-weight: bold;
+}

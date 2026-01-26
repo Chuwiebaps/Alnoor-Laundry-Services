@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Booking | Al Noor</title>
+    <link rel="stylesheet" href="booking-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="booking-page">
+
+    <nav class="nav-bar">
+        <div class="container nav-content">
+            <div class="logo">
+                <i class="fa-solid fa-shirt"></i> Al Noor
+            </div>
+            <div class="nav-menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="order-history.html">Order History</a>
+                <a href="profile.html">Profile</a>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container booking-main">
+        <a href="dashboard.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+        
+        <header class="page-header">
+            <h1>Create New Booking</h1>
+            <p>Select your services and provide any special instructions</p>
+        </header>
+
+        <form id="bookingForm" class="booking-card">
+            <section class="form-section">
+                <h3 class="section-title">Select Services</h3>
+                
+                <div class="selection-list">
+                    <label class="selection-item">
+                        <input type="checkbox" name="service" value="150" data-name="Wash">
+                        <div class="item-content">
+                            <div class="item-icon teal"><i class="fa-solid fa-droplet"></i></div>
+                            <div class="item-text">
+                                <strong>Wash</strong>
+                                <span>Professional washing service</span>
+                            </div>
+                            <div class="item-price">₱150</div>
+                        </div>
+                    </label>
+
+                    <label class="selection-item">
+                        <input type="checkbox" name="service" value="100" data-name="Dry">
+                        <div class="item-content">
+                            <div class="item-icon teal"><i class="fa-solid fa-sun"></i></div>
+                            <div class="item-text">
+                                <strong>Dry</strong>
+                                <span>Efficient drying service</span>
+                            </div>
+                            <div class="item-price">₱100</div>
+                        </div>
+                    </label>
+
+                    <label class="selection-item">
+                        <input type="checkbox" name="service" value="200" data-name="Fold">
+                        <div class="item-content">
+                            <div class="item-icon teal"><i class="fa-solid fa-shirt"></i></div>
+                            <div class="item-text">
+                                <strong>Fold</strong>
+                                <span>Meticulous folding service</span>
+                            </div>
+                            <div class="item-price">₱200</div>
+                        </div>
+                    </label>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h3 class="section-title">Special Instructions (Optional)</h3>
+                <textarea placeholder="e.g., Separate whites from colors, use fabric softener, etc." class="instruction-area"></textarea>
+            </section>
+
+            <section class="form-section">
+                <h3 class="section-title">Payment Method</h3>
+                
+                <div class="selection-list">
+                    <label class="selection-item radio-item">
+                        <input type="radio" name="payment" value="cash" checked>
+                        <div class="item-content">
+                            <div class="radio-circle"></div>
+                            <div class="item-icon teal"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                            <div class="item-text">
+                                <strong>Cash on Pickup/Delivery</strong>
+                                <span>Pay when you collect your laundry</span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="selection-item radio-item">
+                        <input type="radio" name="payment" value="gcash">
+                        <div class="item-content">
+                            <div class="radio-circle"></div>
+                            <div class="item-icon teal"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <div class="item-text">
+                                <strong>GCash</strong>
+                                <span>Pay via GCash upon drop-off</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </section>
+
+            <button type="submit" class="btn-submit">Submit Booking</button>
+        </form>
+    </main>
+
+    <footer class="footer-simple">
+        <div class="readdy-badge">Designed by <span>Readdy</span></div>
+    </footer>
+
+    <script src="booking-js.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Directory | Al Noor Staff</title>
+    <link rel="stylesheet" href="customers-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="staff-page">
+
+    <nav class="staff-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-shirt"></i> Al Noor - Staff Portal
+            </div>
+            <div class="nav-links">
+                <a href="staff-dashboard.html">Dashboard</a>
+                <a href="staff-transactions.html">Transactions</a>
+                <a href="staff-customers.html" class="active">Customers</a>
+                <a href="#">Analytics</a>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-content">
+        <header class="page-header">
+            <h1>Customer Directory</h1>
+            <p>Search and view customer information</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="customerSearch" placeholder="Search by name, email, or phone number...">
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-info">
+                    <span>Total Customers</span>
+                    <h2 class="teal-text">8</h2>
+                </div>
+                <div class="stat-icon teal-light"><i class="fa-solid fa-users"></i></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-info">
+                    <span>Active This Month</span>
+                    <h2 class="green-text">6</h2>
+                </div>
+                <div class="stat-icon green-light"><i class="fa-solid fa-user-check"></i></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-info">
+                    <span>Avg Orders/Customer</span>
+                    <h2 class="purple-text">13</h2>
+                </div>
+                <div class="stat-icon purple-light"><i class="fa-solid fa-bag-shopping"></i></div>
+            </div>
+        </div>
+
+        <section class="table-section">
+            <div class="table-container">
+                <table class="staff-table">
+                    <thead>
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Total Orders</th>
+                            <th>Total Spent</th>
+                            <th>Last Order</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customerTableBody">
+                        <tr>
+                            <td class="bold">CUST-001</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                                    <span>John Doe</span>
+                                </div>
+                            </td>
+                            <td>john.doe@example.com</td>
+                            <td>(123) 456-7890</td>
+                            <td class="bold">15</td>
+                            <td class="bold teal-text">₱6750</td>
+                            <td>2024-01-15</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">CUST-002</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                                    <span>Jane Smith</span>
+                                </div>
+                            </td>
+                            <td>jane.smith@example.com</td>
+                            <td>(123) 456-7891</td>
+                            <td class="bold">12</td>
+                            <td class="bold teal-text">₱5400</td>
+                            <td>2024-01-14</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">CUST-003</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                                    <span>Mike Johnson</span>
+                                </div>
+                            </td>
+                            <td>mike.johnson@example.com</td>
+                            <td>(123) 456-7892</td>
+                            <td class="bold">8</td>
+                            <td class="bold teal-text">₱3600</td>
+                            <td>2024-01-13</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">CUST-004</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                                    <span>Sarah Williams</span>
+                                </div>
+                            </td>
+                            <td>sarah.williams@example.com</td>
+                            <td>(123) 456-7893</td>
+                            <td class="bold">20</td>
+                            <td class="bold teal-text">₱9000</td>
+                            <td>2024-01-15</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">CUST-005</td>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                                    <span>Tom Brown</span>
+                                </div>
+                            </td>
+                            <td>tom.brown@example.com</td>
+                            <td>(123) 456-7894</td>
+                            <td class="bold">10</td>
+                            <td class="bold teal-text">₱4500</td>
+                            <td>2024-01-12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="staff-footer">
+        <div class="readdy-badge">Designed by <span>Readdy</span></div>
+    </footer>
+
+    <script src="customers-js.js"></script>
+</body>
+</html>

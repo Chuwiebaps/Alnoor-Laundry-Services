@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking | Al Noor</title>
+    <link rel="stylesheet" href="tracking-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="tracking-body">
+
+    <nav class="dash-nav">
+        <div class="nav-container">
+            <div class="logo"><i class="fa-solid fa-shirt"></i> Al Noor</div>
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="order-history.html">Order History</a>
+                <a href="#">Profile</a>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="tracking-container">
+        <a href="dashboard.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+        
+        <header class="page-header">
+            <h1>Order Tracking</h1>
+            <p>Track your order progress in real-time</p>
+        </header>
+
+        <div class="card order-summary">
+            <div class="summary-header">
+                <div class="order-id-meta">
+                    <h2>ORD-2024-001</h2>
+                    <p>Placed on 2024-01-15</p>
+                </div>
+                <div class="total-amount">
+                    <label>Total Amount</label>
+                    <div class="price">₱450</div>
+                </div>
+            </div>
+
+            <div class="summary-grid">
+                <div class="grid-item">
+                    <label>Services</label>
+                    <div class="tag-group">
+                        <span class="tag">Wash</span>
+                        <span class="tag">Dry</span>
+                        <span class="tag">Fold</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label>Payment Method</label>
+                    <p class="bold">Cash</p>
+                </div>
+                <div class="grid-item">
+                    <label>Payment Status</label>
+                    <span class="badge-pending">Pending</span>
+                </div>
+            </div>
+
+            <div class="instructions-box">
+                <label>Special Instructions:</label>
+                <p>Separate whites from colors</p>
+            </div>
+        </div>
+
+        <div class="card progress-card">
+            <h2>Order Progress</h2>
+            
+            <div class="stepper">
+                <div class="step completed">
+                    <div class="step-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div class="step-content">
+                        <strong>Pending</strong>
+                        <span>Completed</span>
+                    </div>
+                    <div class="step-check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+
+                <div class="step completed">
+                    <div class="step-icon"><i class="fa-solid fa-check"></i></div>
+                    <div class="step-content">
+                        <strong>Received</strong>
+                        <span>Completed</span>
+                    </div>
+                    <div class="step-check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+
+                <div class="step active">
+                    <div class="step-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <div class="step-content">
+                        <strong>Washing</strong>
+                        <span class="current-label">Current Status</span>
+                    </div>
+                    <div class="step-check"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+
+                <div class="step future">
+                    <div class="step-icon"><i class="fa-solid fa-sun"></i></div>
+                    <div class="step-content">
+                        <strong>Drying</strong>
+                    </div>
+                </div>
+
+                <div class="step future">
+                    <div class="step-icon"><i class="fa-solid fa-shirt"></i></div>
+                    <div class="step-content">
+                        <strong>Folding</strong>
+                    </div>
+                </div>
+
+                <div class="step future">
+                    <div class="step-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                    <div class="step-content">
+                        <strong>Ready for Pickup</strong>
+                    </div>
+                </div>
+
+                <div class="step future">
+                    <div class="step-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="step-content">
+                        <strong>Completed</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note-box">
+                <i class="fa-solid fa-circle-info"></i>
+                <p><strong>Note:</strong> You will receive an email notification when your order is ready for pickup.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="dash-footer">
+        <div class="readdy-badge">Designed by <span>Readdy</span></div>
+    </footer>
+
+    <script src="tracking-js.js"></script>
+</body>
+</html>
