@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Transactions | Al Noor Owner</title>
+    <link rel="stylesheet" href="owner-transaction-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="owner-txn-body">
+
+    <nav class="owner-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fa-solid fa-shirt"></i> Al Noor <span class="tag-owner">OWNER</span>
+            </div>
+            <div class="nav-links">
+                <a href="owner-dashboard.html" class="nav-link"><i class="fa-solid fa-table-columns"></i> Overview</a>
+                <a href="owner-transactions.html" class="nav-link active"><i class="fa-solid fa-money-bill-transfer"></i> All Transactions</a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-list-ul"></i> All Orders</a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-users-gear"></i> Staff Performance</a>
+            </div>
+            <div class="nav-right">
+                <div class="profile-pill"><i class="fa-solid fa-circle-user"></i> Owner</div>
+                <button class="btn-staff-portal">Staff Portal</button>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="content-header">
+            <div class="header-titles">
+                <h1>All Transactions</h1>
+                <p>Monitor revenue and payment logs across all staff members</p>
+            </div>
+            <button class="btn-export"><i class="fa-solid fa-file-export"></i> Export PDF</button>
+        </header>
+
+        <section class="summary-section">
+            <div class="card-summary teal">
+                <span class="lbl">Filtered Total</span>
+                <h2 class="val">₱4,300</h2>
+            </div>
+            <div class="card-summary green">
+                <span class="lbl">Cash (Paid)</span>
+                <h2 class="val">₱2,150</h2>
+            </div>
+            <div class="card-summary blue">
+                <span class="lbl">GCash (Paid)</span>
+                <h2 class="val">₱1,520</h2>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <div class="table-filters">
+                <div class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search customer or Order ID...">
+                </div>
+                <div class="filter-actions">
+                    <select class="staff-dropdown">
+                        <option>All Staff</option>
+                        <option>Maria Santos</option>
+                        <option>Ahmed Raza</option>
+                    </select>
+                    <div class="tab-group">
+                        <button class="tab-btn active">All</button>
+                        <button class="tab-btn">Cash</button>
+                        <button class="tab-btn">GCash</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="txn-table">
+                    <thead>
+                        <tr>
+                            <th>TXN ID</th>
+                            <th>Date & Time</th>
+                            <th>Customer</th>
+                            <th>Order ID</th>
+                            <th>Staff</th>
+                            <th>Amount</th>
+                            <th>Method</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TXN-001</td>
+                            <td>Apr 10, 2026 10:30 AM</td>
+                            <td class="text-bold">John Doe</td>
+                            <td>ORD-2026-001</td>
+                            <td>Maria Santos</td>
+                            <td class="text-bold">₱450</td>
+                            <td><span class="badge cash">Cash</span></td>
+                            <td><span class="badge paid">Paid</span></td>
+                        </tr>
+                        <tr>
+                            <td>TXN-002</td>
+                            <td>Apr 10, 2026 09:15 AM</td>
+                            <td class="text-bold">Jane Smith</td>
+                            <td>ORD-2026-002</td>
+                            <td>Ahmed Raza</td>
+                            <td class="text-bold">₱300</td>
+                            <td><span class="badge gcash">GCash</span></td>
+                            <td><span class="badge paid">Paid</span></td>
+                        </tr>
+                        <tr>
+                            <td>TXN-003</td>
+                            <td>Apr 09, 2026 02:20 PM</td>
+                            <td class="text-bold">Mike Ross</td>
+                            <td>ORD-2026-003</td>
+                            <td>Maria Santos</td>
+                            <td class="text-bold">₱550</td>
+                            <td><span class="badge cash">Cash</span></td>
+                            <td><span class="badge pending">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

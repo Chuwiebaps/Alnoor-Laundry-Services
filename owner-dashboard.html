@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Dashboard | Al Noor</title>
+    <link rel="stylesheet" href="owner-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="owner-body">
+
+    <nav class="owner-navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <i class="fa-solid fa-shirt"></i> Al Noor <span class="owner-tag">OWNER</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-item active"><i class="fa-solid fa-table-columns"></i> Overview</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-money-bill-transfer"></i> All Transactions</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-list-ul"></i> All Orders</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-users-gear"></i> Staff Performance</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="owner-profile">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Owner</span>
+            </div>
+            <button class="btn-portal"><i class="fa-solid fa-arrow-left"></i> Staff Portal</button>
+            <button class="btn-logout">Logout</button>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-text">
+                <h1>Owner Dashboard</h1>
+                <p>Full business overview — Al Noor Laundry</p>
+            </div>
+            <div class="header-date" id="calendarTrigger" style="cursor: pointer;">
+                <i class="fa-regular fa-calendar"></i>
+                <span id="dateText">Friday, April 10, 2026</span>
+                <input type="date" id="datePicker" style="display: none;">
+            </div>
+        </header>
+
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-top">
+                    <div class="icon-box green-icon"><i class="fa-solid fa-peso-sign"></i></div>
+                    <span class="trend up">+18%</span>
+                </div>
+                <p class="kpi-label">Total Revenue (Month)</p>
+                <h2 class="kpi-value">₱86,450</h2>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-top">
+                    <div class="icon-box orange-icon"><i class="fa-solid fa-receipt"></i></div>
+                    <span class="trend up">+11%</span>
+                </div>
+                <p class="kpi-label">Total Orders (Month)</p>
+                <h2 class="kpi-value">312</h2>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-top">
+                    <div class="icon-box teal-icon"><i class="fa-solid fa-users"></i></div>
+                    <span class="trend up">+7%</span>
+                </div>
+                <p class="kpi-label">Active Customers</p>
+                <h2 class="kpi-value">148</h2>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-top">
+                    <div class="icon-box purple-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <span class="status-active">Active</span>
+                </div>
+                <p class="kpi-label">Staff Members</p>
+                <h2 class="kpi-value">6</h2>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-top">
+                    <div class="icon-box green-icon"><i class="fa-solid fa-cash-register"></i></div>
+                    <span class="meta-data">60%</span>
+                </div>
+                <p class="kpi-label">Cash Collected</p>
+                <h2 class="kpi-value">₱51,870</h2>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-top">
+                    <div class="icon-box blue-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <span class="meta-data">40%</span>
+                </div>
+                <p class="kpi-label">GCash Collected</p>
+                <h2 class="kpi-value">₱34,580</h2>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-top">
+                    <div class="icon-box yellow-icon"><i class="fa-solid fa-clock"></i></div>
+                    <span class="meta-alert">9 orders</span>
+                </div>
+                <p class="kpi-label">Pending Payments</p>
+                <h2 class="kpi-value">₱4,200</h2>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-top">
+                    <div class="icon-box pink-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <span class="trend up">+5%</span>
+                </div>
+                <p class="kpi-label">Avg Order Value</p>
+                <h2 class="kpi-value">₱277</h2>
+            </div>
+        </div>
+
+        <section class="performance-section">
+            <div class="section-header">
+                <h3>Staff Performance & Transactions</h3>
+                <p>Revenue and orders handled per staff member</p>
+            </div>
+
+            <div class="staff-row">
+                <div class="staff-identity">
+                    <div class="avatar cyan">MS</div>
+                    <div class="staff-name">
+                        <strong>Maria Santos <span class="badge-staff">Active</span></strong>
+                        <span>Senior Staff</span>
+                    </div>
+                </div>
+                <div class="staff-metrics">
+                    <div class="m-item"><strong>87</strong><span>Orders</span></div>
+                    <div class="m-item"><strong>₱26,100</strong><span>Revenue</span></div>
+                    <div class="m-item"><strong>₱15,660</strong><span>Cash</span></div>
+                    <div class="m-item"><strong>₱10,440</strong><span>GCash</span></div>
+                    <div class="m-item"><strong class="gold">★ 4.9</strong><span>Rating</span></div>
+                </div>
+                <div class="staff-progress-box">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill cyan-fill" style="width: 28%;"></div>
+                    </div>
+                    <span class="progress-label">28% of total</span>
+                </div>
+            </div>
+
+            <div class="staff-row">
+                <div class="staff-identity">
+                    <div class="avatar orange">AR</div>
+                    <div class="staff-name">
+                        <strong>Ahmed Raza <span class="badge-staff">Active</span></strong>
+                        <span>Staff</span>
+                    </div>
+                </div>
+                <div class="staff-metrics">
+                    <div class="m-item"><strong>74</strong><span>Orders</span></div>
+                    <div class="m-item"><strong>₱22,200</strong><span>Revenue</span></div>
+                    <div class="m-item"><strong>₱11,100</strong><span>Cash</span></div>
+                    <div class="m-item"><strong>₱11,100</strong><span>GCash</span></div>
+                    <div class="m-item"><strong class="gold">★ 4.7</strong><span>Rating</span></div>
+                </div>
+                <div class="staff-progress-box">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill orange-fill" style="width: 24%;"></div>
+                    </div>
+                    <span class="progress-label">24% of total</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="owner-logic.js"></script>
+</body>
+</html>

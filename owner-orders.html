@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Orders | Al Noor Owner</title>
+    <link rel="stylesheet" href="owner-orders-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="owner-orders-body">
+
+    <nav class="owner-navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fa-solid fa-shirt"></i> Al Noor <span class="tag-owner">OWNER</span>
+            </div>
+            <div class="nav-links">
+                <a href="owner-dashboard.html" class="nav-link"><i class="fa-solid fa-table-columns"></i> Overview</a>
+                <a href="owner-transactions.html" class="nav-link"><i class="fa-solid fa-money-bill-transfer"></i> All Transactions</a>
+                <a href="owner-orders.html" class="nav-link active"><i class="fa-solid fa-list-ul"></i> All Orders</a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-users-gear"></i> Staff Performance</a>
+            </div>
+            <div class="nav-right">
+                <div class="profile-pill"><i class="fa-solid fa-circle-user"></i> Owner</div>
+                <button class="btn-staff-portal"><i class="fa-solid fa-arrow-left"></i> Staff Portal</button>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="content-header">
+            <div class="header-titles">
+                <h1>All Orders</h1>
+                <p>Complete order history across all staff and customers</p>
+            </div>
+            <div class="revenue-badge">
+                <span class="rev-label">Filtered Revenue</span>
+                <span class="rev-value">₱3,500</span>
+            </div>
+        </header>
+
+        <section class="filter-section">
+            <div class="filter-top-row">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search customer or order ID...">
+                </div>
+                <select class="staff-dropdown">
+                    <option>All Staff</option>
+                    <option>Maria Santos</option>
+                    <option>Ahmed Raza</option>
+                </select>
+            </div>
+            
+            <div class="status-filter-bar">
+                <button class="status-tab active">All Status</button>
+                <button class="status-tab">Pending</button>
+                <button class="status-tab">Received</button>
+                <button class="status-tab">Washing</button>
+                <button class="status-tab">Drying</button>
+                <button class="status-tab">Folding</button>
+                <button class="status-tab">Ready for Pickup</button>
+                <button class="status-tab">Completed</button>
+            </div>
+        </section>
+
+        <section class="table-container">
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Staff</th>
+                        <th>Services</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Payment</th>
+                        <th>Pay Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ORD-2026-001</td>
+                        <td>Apr 10, 2026</td>
+                        <td class="text-bold">John Doe</td>
+                        <td>Maria Santos</td>
+                        <td>
+                            <span class="svc-tag wash">Wash</span>
+                            <span class="svc-tag dry">Dry</span>
+                            <span class="svc-tag fold">Fold</span>
+                        </td>
+                        <td class="text-bold">₱450</td>
+                        <td><span class="badge-status washing">Washing</span></td>
+                        <td><span class="badge-pay cash">Cash</span></td>
+                        <td><span class="badge-pstatus pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>ORD-2026-002</td>
+                        <td>Apr 10, 2026</td>
+                        <td class="text-bold">Jane Smith</td>
+                        <td>Ahmed Raza</td>
+                        <td>
+                            <span class="svc-tag wash">Wash</span>
+                            <span class="svc-tag dry">Dry</span>
+                        </td>
+                        <td class="text-bold">₱300</td>
+                        <td><span class="badge-status ready">Ready for Pickup</span></td>
+                        <td><span class="badge-pay gcash">GCash</span></td>
+                        <td><span class="badge-pstatus paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td>ORD-2026-003</td>
+                        <td>Apr 09, 2026</td>
+                        <td class="text-bold">Mike Johnson</td>
+                        <td>Maria Santos</td>
+                        <td>
+                            <span class="svc-tag wash">Wash</span>
+                            <span class="svc-tag fold">Fold</span>
+                        </td>
+                        <td class="text-bold">₱350</td>
+                        <td><span class="badge-status completed">Completed</span></td>
+                        <td><span class="badge-pay cash">Cash</span></td>
+                        <td><span class="badge-pstatus paid">Paid</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>

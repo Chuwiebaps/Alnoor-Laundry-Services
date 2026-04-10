@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Performance | Al Noor Owner</title>
+    <link rel="stylesheet" href="owner-staff-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="owner-staff-body">
+
+    <nav class="owner-navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><i class="fa-solid fa-shirt"></i> Al Noor <span class="tag-owner">OWNER</span></div>
+            <div class="nav-links">
+                <a href="owner-dashboard.html" class="nav-link"><i class="fa-solid fa-table-columns"></i> Overview</a>
+                <a href="owner-transactions.html" class="nav-link"><i class="fa-solid fa-money-bill-transfer"></i> All Transactions</a>
+                <a href="owner-orders.html" class="nav-link"><i class="fa-solid fa-list-ul"></i> All Orders</a>
+                <a href="owner-staff.html" class="nav-link active"><i class="fa-solid fa-users-gear"></i> Staff Performance</a>
+            </div>
+            <div class="nav-right">
+                <div class="profile-pill"><i class="fa-solid fa-circle-user"></i> Owner</div>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="content-header">
+            <div class="header-titles">
+                <h1>Staff Performance</h1>
+                <p>Track efficiency, revenue contribution, and service ratings</p>
+            </div>
+            <div class="header-date" id="calendarTrigger">
+                <i class="fa-regular fa-calendar"></i> 
+                <span id="displayDate">April 2026 (Monthly)</span>
+                <input type="date" id="datePicker" style="display: none;">
+            </div>
+        </header>
+
+        <section class="staff-list">
+            <div class="performance-card">
+                <div class="card-left">
+                    <div class="staff-avatar cyan-bg">MS</div>
+                    <div class="staff-info">
+                        <h3>Maria Santos <span class="badge active">Active</span></h3>
+                        <p>Senior Staff • Joined Jan 2025</p>
+                    </div>
+                </div>
+                
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <span class="stat-label">Orders</span>
+                        <span class="stat-value">87</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Revenue</span>
+                        <span class="stat-value">₱26,100</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Avg. Time</span>
+                        <span class="stat-value">45m</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Rating</span>
+                        <span class="stat-value gold">★ 4.9</span>
+                    </div>
+                </div>
+
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span>Monthly Target Progress</span>
+                        <span>87%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 87%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="performance-card">
+                <div class="card-left">
+                    <div class="staff-avatar orange-bg">AR</div>
+                    <div class="staff-info">
+                        <h3>Ahmed Raza <span class="badge active">Active</span></h3>
+                        <p>Staff • Joined March 2025</p>
+                    </div>
+                </div>
+                
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <span class="stat-label">Orders</span>
+                        <span class="stat-value">74</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Revenue</span>
+                        <span class="stat-value">₱22,200</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Avg. Time</span>
+                        <span class="stat-value">52m</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Rating</span>
+                        <span class="stat-value gold">★ 4.7</span>
+                    </div>
+                </div>
+
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span>Monthly Target Progress</span>
+                        <span>74%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill orange" style="width: 74%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="owner-staff-js.js"></script>
+</body>
+</html>
