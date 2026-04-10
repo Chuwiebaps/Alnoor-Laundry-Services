@@ -1,9 +1,9 @@
-:root {
-    --primary-teal: #11998e;
-    --dark-teal: #0d7e75;
-    --light-bg: #f0fdfa;
-    --text-main: #2d3748;
-    --text-muted: #718096;
+﻿:root {
+    --primary-teal: #D19BA4;
+    --dark-teal: #AE4A55;
+    --light-bg: #632129;
+    --text-main: #7D5F54;
+    --text-muted: #2D1319;
 }
 
 * {
@@ -14,7 +14,7 @@
 
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    color: var(--text-main);
+    color: #632129;
     line-height: 1.6;
 }
 
@@ -28,7 +28,7 @@ body {
 .navbar {
     background-color: var(--primary-teal);
     padding: 15px 0;
-    color: white;
+    color: rgb(77, 18, 44);
 }
 
 .nav-container {
@@ -38,6 +38,7 @@ body {
 }
 
 .logo {
+    color: #560926;
     font-size: 1.5rem;
     font-weight: bold;
     display: flex;
@@ -54,21 +55,21 @@ body {
 }
 
 .btn-login {
-    background: white;
+    background: rgb(235, 207, 222);
     color: var(--primary-teal);
     margin-right: 10px;
 }
 
 .btn-signup {
     background: rgba(255, 255, 255, 0.2);
-    color: white;
+    color: rgb(255, 255, 255);
     border: 1px solid rgba(255,255,255,0.4) !important;
 }
 
 /* Hero */
 .hero {
     height: 500px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&q=80');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://img.freepik.com/premium-photo/modern-laundromat-with-pink-neon-lighting-minimalist-design-chic-laundromat-aesthetic-concept-stylish-laundry-facilities-contemporary-decor-inviting-atmosphere_981050-13321.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -77,6 +78,7 @@ body {
     text-align: center;
     color: white;
 }
+
 
 .hero h1 { font-size: 3rem; margin-bottom: 10px; }
 .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
@@ -92,7 +94,7 @@ body {
 }
 
 /* Services */
-.services { padding: 80px 0; background: #fff; }
+.services { padding: 80px 0; background: #f8cdd4; }
 .section-title { text-align: center; margin-bottom: 50px; font-size: 2rem; }
 
 .services-grid {
@@ -102,12 +104,13 @@ body {
 }
 
 .service-card {
+    background: #efbfc6;
     padding: 40px;
-    border: 1px solid #edf2f7;
+    border: 1px solid #2D1319;
     border-radius: 10px;
     text-align: left;
     transition: transform 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 105px 200px rgba(0,0,0,0.03);
 }
 
 .icon-box {
@@ -126,7 +129,7 @@ body {
 .service-card p { font-size: 0.9rem; color: var(--text-muted); }
 
 /* Info Section */
-.info-section { padding-bottom: 80px; }
+.info-section { padding: 80px 0; background: #f8cdd4; }
 .info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -134,16 +137,22 @@ body {
 }
 
 .info-card {
-    background: var(--light-bg);
+    background: #efbfc6;
     padding: 30px;
     border-radius: 10px;
+    padding: 40px;
+    border: 1px solid #2D1319;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s;
+    box-shadow: 0 105px 200px rgba(0,0,0,0.03);
 }
 
 .info-header {
     display: flex;
     align-items: center;
     gap: 15px;
-    color: var(--primary-teal);
+    color: #2D1319;
     margin-bottom: 20px;
 }
 
@@ -156,7 +165,7 @@ body {
 }
 
 /* Benefits */
-.benefits { padding: 80px 0; text-align: center; }
+.benefits { padding: 80px 0; background: #f8cdd4; text-align: center; }
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -201,8 +210,8 @@ body {
 
 /* Footer */
 .footer {
-    background: #1a202c;
-    color: #a0aec0;
+    background: #7D5F54;
+    color: #2D1319;
     padding: 30px 0;
     text-align: center;
     font-size: 0.8rem;

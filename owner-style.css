@@ -1,10 +1,10 @@
 :root {
-    --navy-dark: #0f172a;
-    --navy-muted: #1e293b;
-    --teal-primary: #0d9488;
-    --bg-light: #f8fafc;
-    --text-main: #1e293b;
-    --text-muted: #64748b;
+    --navy-dark: #6a292b;
+    --navy-muted: #f79bc7;
+    --teal-primary: #9e2831;
+    --bg-light: #e1a6a8;
+    --text-main: #410003;
+    --text-muted: #a44e4e;
 }
 
 * {
@@ -60,7 +60,7 @@ body.owner-body {
 }
 
 .nav-item {
-    color: #94a3b8;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.9rem;
     padding: 8px 16px;
@@ -93,7 +93,7 @@ body.owner-body {
 }
 
 .btn-logout {
-    background: #ef4444;
+    background: #4a0c0e;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -119,10 +119,10 @@ body.owner-body {
 .header-text p { color: var(--text-muted); }
 
 .header-date {
-    background: white;
+    background: #f7c2c8;
     padding: 10px 15px;
     border-radius: 8px;
-    border: 1px solid #e2e8f0;
+    border: 2px solid #984249;
     font-size: 0.9rem;
 }
 
@@ -209,11 +209,11 @@ body.owner-body {
 .avatar.orange { background: #f97316; }
 
 .staff-name strong { display: block; font-size: 1rem; }
-.staff-name span { font-size: 0.85rem; color: var(--text-muted); }
+.staff-name span { font-size: 0.85rem; color: #1abf07; }
 
 .badge-staff {
     background: #dcfce7;
-    color: #16a34a;
+    color: #ff6a00;
     font-size: 0.65rem;
     padding: 2px 6px;
     border-radius: 4px;

@@ -2,7 +2,7 @@
 body.owner-staff-body { background-color: #f8fafc; font-family: 'Inter', sans-serif; color: #1e293b; }
 
 /* NAVBAR */
-.owner-navbar { background-color: #0f172a; color: white; height: 70px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; }
+.owner-navbar { background-color: #6a292b; color: white; height: 70px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; }
 .nav-container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; }
 .nav-logo { font-weight: 700; font-size: 1.2rem; display: flex; align-items: center; gap: 8px; }
 .tag-owner { background: #0d9488; font-size: 0.6rem; padding: 2px 8px; border-radius: 4px; }

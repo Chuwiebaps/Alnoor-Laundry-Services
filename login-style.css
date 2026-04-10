@@ -1,8 +1,8 @@
 :root {
-    --primary-teal: #11998e;
-    --bg-gray: #f9fafb;
+    --primary-teal: #d07b89;
+    --bg-gray: #f8cdd4;
     --tab-bg: #edf2f7;
-    --text-dark: #1a202c;
+    --text-dark: #973b4b;
     --text-light: #718096;
     --border-color: #e2e8f0;
 }
@@ -19,6 +19,14 @@ body.login-body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+body {
+    background-image: url("https://i.pinimg.com/originals/fe/a2/ea/fea2ea3662141172ca762a765b955c83.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 .login-wrapper {
@@ -47,7 +55,7 @@ body.login-body {
 }
 
 .login-header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--text-dark);
 }
 

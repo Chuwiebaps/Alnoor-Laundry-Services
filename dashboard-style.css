@@ -1,11 +1,11 @@
 :root {
-    --primary-teal: #11998e;
-    --status-purple: #f3e8ff;
-    --purple-text: #9333ea;
-    --bg-gray: #f9fafb;
-    --border-color: #f1f5f9;
-    --text-dark: #1e293b;
-    --text-muted: #64748b;
+    --primary-teal: #b95d6d;
+    --status-purple: #AE4A55;
+    --purple-text: #2D1319;
+    --bg-gray: #f8cdd4;
+    --border-color: #AE4A55;
+    --text-dark: #2D1319;
+    --text-muted: #2D1319;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -18,9 +18,9 @@ body.dashboard-body {
 
 /* Navbar */
 .dash-nav {
-    background: white;
+    background: #D19BA4;
     padding: 15px 40px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid #D19BA4;
 }
 
 .nav-container {
@@ -32,12 +32,12 @@ body.dashboard-body {
 }
 
 .logo {
-    color: var(--primary-teal);
+    color: #560926;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-size: 1.2rem;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .nav-links {
@@ -55,7 +55,7 @@ body.dashboard-body {
 .nav-links a.active { color: var(--primary-teal); font-weight: 600; }
 
 .btn-logout {
-    background: #ef4444;
+    background: #632129;
     color: white;
     border: none;
     padding: 8px 18px;
@@ -99,16 +99,17 @@ body.dashboard-body {
 }
 
 .status-badge {
-    background: var(--status-purple);
-    color: var(--purple-text);
+    background: #faefd9;
+    color: #daa63e;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 600;
-}
+} 
+
 
 .order-details-box {
-    background: #f0fdfa; /* Very light teal */
+    background: #fee7eb; /* Very light teal */
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -151,7 +152,7 @@ body.dashboard-body {
 .order-icon {
     width: 40px;
     height: 40px;
-    background: #f0fdfa;
+    background: #fee7eb;
     color: var(--primary-teal);
     border-radius: 8px;
     display: flex;
@@ -166,8 +167,8 @@ body.dashboard-body {
 .order-meta { margin-left: auto; text-align: right; margin-right: 20px; }
 .order-price-small { font-weight: bold; font-size: 0.9rem; }
 .status-text { font-size: 0.7rem; font-weight: 600; }
-.status-text.ready { color: #10b981; }
-.status-text.completed { color: #64748b; }
+.status-text.ready { color: #af1628; }
+.status-text.completed { color: #f9bcc6; }
 
 .btn-view {
     background: var(--primary-teal);
@@ -193,16 +194,12 @@ body.dashboard-body {
 }
 
 .action-card.primary { background: var(--primary-teal); color: white; }
-.action-card.secondary { background: #f0fdfa; color: var(--text-dark); }
+.action-card.secondary { background: #fee7eb; color: var(--text-dark); }
 
 .action-icon { font-size: 1.2rem; margin-right: 15px; }
 .action-text strong { display: block; font-size: 0.9rem; }
 .action-text span { font-size: 0.75rem; opacity: 0.8; }
 
-/* Footer */
-.dash-footer { padding: 20px 40px; }
-.readdy-badge { background: #e5e7eb; display: inline-block; padding: 5px 12px; border-radius: 6px; font-size: 0.7rem; }
-.readdy-badge span { font-weight: bold; }
 
 /* Responsive */
 @media (max-width: 900px) {

@@ -1,9 +1,9 @@
 :root {
-    --primary-teal: #11998e;
+    --primary-teal: #d07b89;
     --bg-gray: #f9fafb;
-    --border-color: #e2e8f0;
-    --text-dark: #1a202c;
-    --text-light: #718096;
+    --border-color: #AE4A55;
+    --text-dark: #2D1319;
+    --text-light: #20f02e;
 }
 
 * {
@@ -14,12 +14,19 @@
 
 body.register-body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-gray);
+    background-color: #2D1319;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
+body {
+    background-image: url("https://i.pinimg.com/originals/99/fd/30/99fd3033f88346b0d8b731a8550ef670.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
 .register-wrapper {
     flex: 1;
     display: flex;
@@ -52,7 +59,7 @@ body.register-body {
 }
 
 .register-header p {
-    color: var(--text-light);
+    color: #2D1319;
     font-size: 0.95rem;
 }
 
@@ -89,7 +96,7 @@ body.register-body {
 }
 
 .form-group input::placeholder {
-    color: #cbd5e0;
+    color: #887d7f;
 }
 
 .form-group input:focus {
@@ -112,19 +119,12 @@ body.register-body {
 }
 
 .btn-signup-full:hover {
-    background-color: #0e837a;
+    background-color: #d07b89;
 }
 
-/* Footer Styling */
-.register-footer {
-    padding: 25px;
-    background-color: #1a202c;
-    color: #a0aec0;
-    text-align: center;
-    font-size: 0.8rem;
-}
+
 
 .powered-text span {
-    color: var(--primary-teal);
+    color: #2D1319;
     font-weight: bold;
 }

@@ -1,8 +1,8 @@
 :root {
-    --primary-teal: #11998e;
-    --primary-hover: #0e867d;
-    --bg-gray: #f8fafc;
-    --text-dark: #1e293b;
+    --primary-teal: #d07b89;
+    --primary-hover: #d07b89;
+    --bg-gray: #f8cdd4;
+    --text-dark: #491118;
     --text-muted: #64748b;
     --border-color: #e2e8f0;
 }
@@ -18,6 +18,14 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+body {
+    background-image: url("https://i.pinimg.com/originals/1d/a3/d4/1da3d47bcfe7793ee52cafc73b5c753a.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 .auth-container {

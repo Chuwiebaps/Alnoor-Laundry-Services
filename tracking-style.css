@@ -1,9 +1,9 @@
 :root {
-    --primary-teal: #11998e;
-    --bg-gray: #f8fafc;
-    --border-color: #e2e8f0;
-    --text-dark: #1e293b;
-    --text-muted: #64748b;
+    --primary-teal: #D183A9;
+    --bg-gray: #F3C8DD;
+    --border-color: #F3C8DD;
+    --text-dark: #4B1535;
+    --text-muted: #4B1535;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }

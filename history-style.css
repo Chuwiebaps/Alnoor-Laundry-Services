@@ -1,16 +1,16 @@
 :root {
-    --primary-teal: #11998e;
-    --bg-gray: #f8fafc;
-    --border-color: #f1f5f9;
+    --primary-teal: #b95d6d;
+    --bg-gray: #f8cdd4;
+    --border-color: #f9d0d5;
     --text-dark: #1e293b;
     --text-muted: #64748b;
     /* Status Colors */
-    --status-washing-bg: #f3e8ff;
-    --status-washing-text: #9333ea;
-    --status-ready-bg: #dcfce7;
-    --status-ready-text: #16a34a;
-    --status-completed-bg: #f1f5f9;
-    --status-completed-text: #64748b;
+    --status-washing-bg: #faefd9;
+    --status-washing-text: #daa63e;
+    --status-ready-bg: #efdef9;
+    --status-ready-text: #4d104a;
+    --status-completed-bg: #E0A4B0;
+    --status-completed-text: #7C0116;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -24,14 +24,27 @@ body {
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
 /* Navigation (Consistent with previous pages) */
-.nav-bar { background: white; border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
+.nav-bar { background: #D19BA4; border-bottom: 1px solid #D19BA4; padding: 15px 0; }
 .nav-content { display: flex; justify-content: space-between; align-items: center; }
-.logo { color: var(--primary-teal); font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; gap: 8px; }
-.nav-menu { display: flex; align-items: center; gap: 20px; }
+.logo {
+    color: #560926;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}.nav-menu { display: flex; align-items: center; gap: 20px; }
 .nav-menu a { text-decoration: none; color: var(--text-dark); font-size: 0.9rem; }
 .nav-menu a.active { color: var(--primary-teal); font-weight: 700; }
-.btn-logout { background: #ef4444; color: white; border: none; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-weight: 600; }
-
+.btn-logout {
+    background: #632129;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
 /* Header */
 .history-main { margin-top: 40px; margin-bottom: 60px; }
 .page-header h1 { font-size: 1.8rem; margin-bottom: 5px; }
@@ -71,7 +84,7 @@ body {
 
 /* Tags & Statuses */
 .tag {
-    background: #f0fdfa;
+    background: #fee7eb;
     color: var(--primary-teal);
     padding: 4px 10px;
     border-radius: 6px;
@@ -94,7 +107,7 @@ body {
 
 /* Button */
 .btn-view {
-    background: var(--primary-teal);
+    background: #c2475b;
     color: white;
     border: none;
     padding: 8px 16px;
