@@ -1,0 +1,72 @@
+:root {
+    --primary-teal: #11998e;
+    --bg-gray: #f0f4f8;
+    --border: #e2e8f0;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+}
+
+body { font-family: 'Inter', sans-serif; background: var(--bg-gray); margin: 0; color: var(--text-dark); }
+
+/* Navigation */
+.staff-nav { background: var(--primary-teal); padding: 15px 0; color: white; }
+.nav-container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+.nav-links { display: flex; gap: 20px; align-items: center; }
+.nav-links a { color: white; text-decoration: none; font-size: 0.9rem; }
+.btn-logout { background: #ef4444; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; }
+
+/* Layout */
+.management-content { max-width: 800px; margin: 30px auto; padding: 0 20px; }
+.back-link { color: var(--primary-teal); text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+
+.page-header { margin: 20px 0; }
+.page-header h1 { font-size: 1.6rem; margin-bottom: 5px; }
+.page-header p { color: var(--text-muted); font-size: 0.9rem; }
+
+/* Cards */
+.info-card, .status-card, .payment-card { 
+    background: white; border-radius: 12px; padding: 25px; margin-bottom: 20px; 
+    border: 1px solid var(--border); box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+h3 { font-size: 1rem; margin-bottom: 20px; color: var(--text-dark); }
+small { color: var(--text-muted); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+p { margin-top: 4px; }
+.bold { font-weight: 700; }
+.teal-text { color: var(--primary-teal); font-size: 1.4rem; font-weight: 800; }
+
+/* Detail Items */
+.details-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.detail-item { display: flex; align-items: center; gap: 12px; }
+.circle-icon { width: 35px; height: 35px; background: #ccfbf1; color: var(--primary-teal); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
+
+/* Order Details Specifics */
+.order-meta { display: flex; gap: 80px; margin-bottom: 20px; }
+.services-row { margin-bottom: 20px; }
+.badge-group { display: flex; gap: 8px; margin-top: 8px; }
+.badge { padding: 4px 12px; border-radius: 6px; color: white; font-size: 0.8rem; font-weight: 600; }
+.wash { background: #0d9488; }
+.dry { background: #0d9488; }
+.fold { background: #0d9488; }
+
+.instructions-box { background: #f1f5f9; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+
+.pricing-row { display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid var(--border); pt: 15px; }
+
+/* Status Update Picker */
+.status-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 10px; }
+.status-btn { 
+    padding: 12px; border: 1px solid var(--border); background: #f8fafc; 
+    border-radius: 8px; cursor: pointer; font-size: 0.85rem; color: var(--text-muted);
+}
+.status-btn.active { background: var(--primary-teal); color: white; border-color: var(--primary-teal); font-weight: 600; }
+
+/* Payment Section */
+.payment-flex { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+.status-pending { color: #f59e0b; font-weight: 700; }
+.btn-mark-paid { background: #22c55e; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: 600; }
+
+/* Footer Actions */
+.action-footer { display: flex; gap: 15px; margin-top: 30px; margin-bottom: 50px; }
+.btn-save { flex: 4; background: var(--primary-teal); color: white; border: none; padding: 15px; border-radius: 8px; font-weight: 700; font-size: 1rem; cursor: pointer; }
+.btn-cancel { flex: 1; background: #e2e8f0; color: var(--text-dark); border: none; padding: 15px; border-radius: 8px; font-weight: 600; cursor: pointer; }

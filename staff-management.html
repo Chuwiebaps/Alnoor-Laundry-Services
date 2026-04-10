@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management | Al Noor Staff</title>
+    <link rel="stylesheet" href="management-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="staff-page">
+
+    <nav class="staff-nav">
+        <div class="nav-container">
+            <div class="logo">Al Noor - Staff Portal</div>
+            <div class="nav-links">
+                <a href="staff-dashboard.html">Dashboard</a>
+                <a href="staff-transactions.html">Transactions</a>
+                <a href="staff-customers.html">Customers</a>
+                <a href="staff-analytics.html">Analytics</a>
+                <button class="btn-logout">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="management-content">
+        <a href="staff-dashboard.html" class="back-link">← Back to Dashboard</a>
+        
+        <header class="page-header">
+            <h1>Order Management</h1>
+            <p>Update order status and manage payment</p>
+        </header>
+
+        <section class="info-card">
+            <h3>Customer Details</h3>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="circle-icon"><i class="fa-solid fa-user"></i></div>
+                    <div><small>Name</small><p>John Doe</p></div>
+                </div>
+                <div class="detail-item">
+                    <div class="circle-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div><small>Email</small><p>john.doe@example.com</p></div>
+                </div>
+                <div class="detail-item">
+                    <div class="circle-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div><small>Phone</small><p>(123) 456-7890</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-card">
+            <h3>Order Details</h3>
+            <div class="order-meta">
+                <div><small>Order ID</small><p class="bold">ORD-2024-001</p></div>
+                <div><small>Order Date</small><p class="bold">2024-01-15</p></div>
+            </div>
+            
+            <div class="services-row">
+                <small>Services</small>
+                <div class="badge-group">
+                    <span class="badge wash">Wash</span>
+                    <span class="badge dry">Dry</span>
+                    <span class="badge fold">Fold</span>
+                </div>
+            </div>
+
+            <div class="instructions-box">
+                <small>Special Instructions</small>
+                <p>Separate whites from colors</p>
+            </div>
+
+            <div class="pricing-row">
+                <div><small>Payment Method</small><p class="bold">Cash</p></div>
+                <div class="total-display"><small>Total Amount</small><p class="teal-text">₱450</p></div>
+            </div>
+        </section>
+
+        <section class="status-card">
+            <h3>Update Status</h3>
+            <small>Current Status</small>
+            <div class="status-buttons" id="statusPicker">
+                <button class="status-btn">Pending</button>
+                <button class="status-btn">Received</button>
+                <button class="status-btn active">Washing</button>
+                <button class="status-btn">Drying</button>
+                <button class="status-btn">Folding</button>
+                <button class="status-btn">Ready for Pickup</button>
+                <button class="status-btn">Completed</button>
+            </div>
+        </section>
+
+        <section class="payment-card">
+            <h3>Payment Status</h3>
+            <div class="payment-flex">
+                <div><small>Payment Status</small><p class="status-pending">Pending</p></div>
+                <button class="btn-mark-paid">Mark as Paid</button>
+            </div>
+        </section>
+
+        <div class="action-footer">
+            <button class="btn-save">Save Changes</button>
+            <button class="btn-cancel">Cancel</button>
+        </div>
+    </main>
+
+    <script src="management-js.js"></script>
+</body>
+</html>
